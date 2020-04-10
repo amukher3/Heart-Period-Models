@@ -32,7 +32,7 @@ There were two different methods that I had started with: 1) Dictionary-learning
                                                           2) misAligned PCA. 
 
 
-     #1) Dictionary learning technique: 
+  # Dictionary learning technique: 
      
      Used dictionary learning algorithm(K-SVD based) to learn the reposne function. The IBI time series was broken into epochs of 5 seconds to form the matrix to be learnt using K-SVD. I decided to choose 5 second as the window size because the time series being elicited from a continous stream of situmuli would be marred by suddent stimuli thereby the effect of the previous stimuli can be safely assumed to be less than 5 seconds. Another reason to choose a smaller window size was to induce sparsity in the learnt atoms. Having sparse atoms introduces advantages such as easier frequency domain analysis , easily represented de-convolution results etc.  
      Some of the atoms learnt throught the dictionary learning technique seemed to have a strong correlation with the physiogically extracted response functions shown by Bach et. al. 
@@ -45,4 +45,4 @@ There were two different methods that I had started with: 1) Dictionary-learning
      
      At some point the community needs to realize that one aspect of AI is through generative modeling of our deep seated responses,  mitigated and modulated by our nervous system's electrical responses. The different RFs elicited which are placed in the different regions of the V-A scale gives us insight into how our sympathetic nervous sytem has reacted to the stimuli. The shape of the RF(accelaration/decclaration), a reflection of the modulation of the heart period, might then lead to some insights into why we react differently to certain stimulus/conditions. This generative distribution might lead to a better understanding of why certain age groups, gender react differently to different siutations which might refine our understanding of how evolution has affected us differently.
      
-     2) misPCA:
+   # misPCA:
