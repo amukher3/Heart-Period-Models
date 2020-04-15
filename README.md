@@ -29,14 +29,10 @@ There were two different methods that I had started with: 1) Dictionary-learning
      The other way of learning over across all the videos for a particular user seemed unreasonable to me since the different stimuli function presented would manifest in markedly differnt response functions therefore the learnt atoms would not be interpretable. 
      
 # Some of the learnt RFs:
-
 For video_1: 
 ![](Video1_Atoms.jpg)
-
 For video_2:
 ![](Video2_Atoms.jpg)
-
-
      Some of the atoms learnt throught the dictionary learning technique seemed to have a strong correlation with the physiogically extracted response functions shown by Bach et. al. 
      One of the caveats in this approach was the large number of atoms that were being learnt for the every subject and for every clip which were very diversely rated in the Valence-Arousal(V-A) scale. 
      To circumvent this I decided to find the embedding of the learnt reponse functions. The idea being that the 2D embeddings of the learnt response functions should have some semblance to the ratings(average/median) of the videos by the participants in the 2D plane of Valence-Arousal. 
