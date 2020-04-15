@@ -3,7 +3,7 @@
 # Heart-Period-Models
 An effort to extract the different response functions for changes in heart period under the effect of suddden continous stimuli rated diversely in the Valence-Arousal scale.  
 
-# Description of the preliminary ideas: 
+# Description of the previous ideas: 
 Extracting response function for changes in heart period under different kinds of discrete/distinct stimuli(having distinct epochs of stimulus and response) has been previously characterized by Bach et. al. The model used to estimate the response function was basically a linear model initially reduced by dimensionality reduction techniques such as PCA. The extracted reponse function were validated with the physiological response(changes in heart period) of the subjects involved in the study. 
 One of the apparent drawbacks of such an approach, apart from the potential limitation of having distinct epochs of stimulus-response cycles seemed to be the "baseline" treatment of the arythmic component. Under various settings of the Valence-Arousal scale the parasympathetic system,at times minimal, has been shown to have a modulating effect on changes in heart period.
 
@@ -23,7 +23,20 @@ After the described the RSA estimation and removal technique our goal was to get
 There were two different methods that I had started with: 1) Dictionary-learning technique. 
                                                           2) misAligned PCA. 
 # Dictionary learning technique: 
-    Used dictionary learning algorithm(K-SVD based) to learn the reposne function. The IBI time series was broken into epochs of 5 seconds to form the matrix to be learnt using K-SVD. I decided to choose 5 second as the window size because the time series being elicited from a continous stream of situmuli would be marred by suddent stimuli thereby the effect of the previous stimuli can be safely assumed to be less than 5 seconds. Another reason to choose a smaller window size was to induce sparsity in the learnt atoms. Having sparse atoms introduces advantages such as easier frequency domain analysis , easily represented de-convolution results etc.  
+
+    Used dictionary learning algorithm(K-SVD based) to learn the reposne function. The IBI time series was broken into epochs of 5 seconds to form the matrix to be learnt using K-SVD. I decided to choose 5 second as the window size because the time series being elicited from a continous stream of situmuli would be marred by sudden stimuli thereby the effect of the previous stimuli can be safely assumed to be less than 5 seconds. Another reason to choose a smaller window size was to induce sparsity in the learnt atoms. Having sparse atoms introduces advantages such as easier frequency domain analysis , easily represented de-convolution results etc.  
+     One of the fundamental assumptions that I have made is that the nature of the stimuli is invariant across the different users. To describe this further, we have assumed that the effect of a partiular clip(or a particular segment) has a similar effect on all the participants. Going forward this might not be a completely prudent assumption but is generally considered a standard practice in the community. It is generally assumed that the response of subjects to standard stimuli function (especially on the extreme end of the V-A spectrum) lead to very similar responses and strikingly the result seems to support this conjecture as well -- the embeddings(described later) in the 2D plane which seemed to be closer to the ratings(average/median/some central measure) were generally rated extremely in the spectrum. 
+     The other way of learning over across all the videos for a particular user seemed unreasonable to me since the different stimuli function presented would manifest in markedly differnt response functions therefore the learnt atoms would not be interpretable. 
+     
+# Some of the learnt RFs:
+
+For video_1: 
+![](Video1_Atoms.jpg)
+
+For video_2:
+![](Video2_Atoms.jpg)
+
+
      Some of the atoms learnt throught the dictionary learning technique seemed to have a strong correlation with the physiogically extracted response functions shown by Bach et. al. 
      One of the caveats in this approach was the large number of atoms that were being learnt for the every subject and for every clip which were very diversely rated in the Valence-Arousal(V-A) scale. 
      To circumvent this I decided to find the embedding of the learnt reponse functions. The idea being that the 2D embeddings of the learnt response functions should have some semblance to the ratings(average/median) of the videos by the participants in the 2D plane of Valence-Arousal. 
