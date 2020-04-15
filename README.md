@@ -13,26 +13,27 @@ We make an effort to characterize the response function and the arythmic compone
 
 Link to the repo: https://github.com/amukher3/Respiratory-Sinus-Arythmia-estimation
 The above repo. has the detailed scripts of the methodology adopted and the different evaluation metrics taken into account. 
-
 Link to the used data-set: https://www.eecs.qmul.ac.uk/mmv/datasets/deap/
 
 # Heart Period Modelling: 
-
 After the described the RSA estimation and removal technique our goal was to get reposne function that could explain the changes in the heart period over a period of time for different kinds of continous stimuli. 
 
 There were two different methods that I had started with: 1) Dictionary-learning technique. 
-                                                          2) misAligned PCA. 
+                                                          2) misAligned PCA.                                                           
 # Dictionary learning technique: 
 
     Used dictionary learning algorithm(K-SVD based) to learn the reposne function. The IBI time series was broken into epochs of 5 seconds to form the matrix to be learnt using K-SVD. I decided to choose 5 second as the window size because the time series being elicited from a continous stream of situmuli would be marred by sudden stimuli thereby the effect of the previous stimuli can be safely assumed to be less than 5 seconds. Another reason to choose a smaller window size was to induce sparsity in the learnt atoms. Having sparse atoms introduces advantages such as easier frequency domain analysis , easily represented de-convolution results etc.  
      One of the fundamental assumptions that I have made is that the nature of the stimuli is invariant across the different users. To describe this further, we have assumed that the effect of a partiular clip(or a particular segment) has a similar effect on all the participants. Going forward this might not be a completely prudent assumption but is generally considered a standard practice in the community. It is generally assumed that the response of subjects to standard stimuli function (especially on the extreme end of the V-A spectrum) lead to very similar responses and strikingly the result seems to support this conjecture as well -- the embeddings(described later) in the 2D plane which seemed to be closer to the ratings(average/median/some central measure) were generally rated extremely in the spectrum. 
-     The other way of learning over across all the videos for a particular user seemed unreasonable to me since the different stimuli function presented would manifest in markedly differnt response functions therefore the learnt atoms would not be interpretable. 
+     The other way, learning across all the videos for a particular user seemed unreasonable since the different stimuli function presented would manifest in markedly differnt response functions therefore the learnt atoms would not be interpretable. 
      
 # Some of the learnt RFs:
+
 For video_1: 
 ![](Video1_Atoms.jpg)
+
 For video_2:
 ![](Video2_Atoms.jpg)
+
      Some of the atoms learnt throught the dictionary learning technique seemed to have a strong correlation with the physiogically extracted response functions shown by Bach et. al. 
      One of the caveats in this approach was the large number of atoms that were being learnt for the every subject and for every clip which were very diversely rated in the Valence-Arousal(V-A) scale. 
      To circumvent this I decided to find the embedding of the learnt reponse functions. The idea being that the 2D embeddings of the learnt response functions should have some semblance to the ratings(average/median) of the videos by the participants in the 2D plane of Valence-Arousal. 
