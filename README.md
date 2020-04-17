@@ -42,3 +42,7 @@ Some of the atoms learnt throught the dictionary learning technique seemed to ha
      At some point the community needs to realize that one aspect of AI is through generative modeling of our deep seated responses,  mitigated and modulated by our nervous system's electrical responses. The different RFs elicited which are placed in the different regions of the V-A scale gives us insight into how our sympathetic nervous sytem has reacted to the stimuli. The shape of the RF(accelaration/decclaration), a reflection of the modulation of the heart period, might then lead to some insights into why we react differently to certain stimulus/conditions. This generative distribution might lead to a better understanding of why certain age groups, gender react differently to different siutations which might refine our understanding of how evolution has affected us differently.
      
 # misPCA:
+
+http://web.eecs.umich.edu/~hero/Preprints/puig_asilomar11.pdf
+
+https://github.com/atibaup/MisPCA
