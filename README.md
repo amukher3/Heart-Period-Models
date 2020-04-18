@@ -69,12 +69,12 @@ Some of the estimated components are shown below with a few key points:
 ![](misPC40_edited.jpg)
 
 As shown in the above estimated components(~ 30s) there are smaller epochs(~ 5s),shown by the bounding boxes which are strikingly similar to the common responses seen in the PsychoPhys. literature, such reponses were also extracted by Bach et. al. in his experiments. One of the bounding boxes,later in the first time-series shows deceleraton-accelaration which basically means the Heart Rate(HR) falls and then starts climbing. Sudden _impulse like shapes_ are indicative of sudden increase in the HR potentially due to some stimuli. 
-Further analysis with the corresponding segment in the clip could give more insight as to how those reponses are related to the content in the clips. 
+Further analysis with the corresponding segment in the clip could give more insight as to how those responses are related to the content in the clips. 
 
 ***2D embeddings of the estimated response functions***
 
 ![](2D_embeddings.jpg)
-The embeddings corresponding to the PC analysis seems to lie close to the vertical axis, mainly spreading into two clusters. This is probably indicative of the fact that the learnt response functions has _`captured the variance only in one direction, which is intuitve, since within Valence and Arousal, correct estimation of Valence is always difficult`_. Two distinct clusters(ignoring the ourlier) probably seems to indicate only one scale - High Arousal and low Arousal. This basically means Arousal, is the feature that is predominantly responsible for separating the embeddings into two clusters. 
+The embeddings corresponding to the PC analysis seems to lie close to the vertical axis, mainly spreading into two clusters along one of the dimensions. This is probably indicative of the fact that the learnt response functions has _`captured the variance only in one direction, which is intuitve, since within Valence and Arousal, correct estimation of Valence is always difficult`_. Two distinct clusters(ignoring the ourlier) probably seems to indicate only one scale - High Arousal and low Arousal. This basically means Arousal, is the feature that is predominantly responsible for separating the embeddings into two clusters. 
 
 Estimating Arousal has never been a difficult problem and can be estimated from bunch of Physiological signals without much hassle. The average ***intra-cluster*** and the ***inter-cluster*** distance for the PC analysis also seems to be very high, which supports the fact that the estiamted _'proprtion of Variance'_ explained by the PC analysis was much lower. 
 
