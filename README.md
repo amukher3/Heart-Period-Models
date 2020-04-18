@@ -68,7 +68,12 @@ Some of the estimated components are shown below with a few key points:
 
 ![](misPC40_edited.jpg)
 
-As shown in the above estimated components(~ 30s) there are smaller epochs(~ 5s),shown by the bounding boxes which are strikingly similar to the common responses seen in the PsychoPhys. literature, such reponses were also extracted by Bach et. al. in his experiments. One of the bounding boxes,later in the second time-series shows deceleraton-accelaration which basically means the Heart Rate(HR) falls and then starts climbing. Sudden _impulse like shapes_ are indicative of sudden increase in the HR potentially due to some stimuli. 
+As shown in the above estimated components(~ 30s) there are smaller epochs(~ 5s),shown by the bounding boxes which are strikingly similar to the common responses seen in the PsychoPhys. literature, such reponses were also extracted by Bach et. al. in his experiments. One of the bounding boxes,later in the first time-series shows deceleraton-accelaration which basically means the Heart Rate(HR) falls and then starts climbing. Sudden _impulse like shapes_ are indicative of sudden increase in the HR potentially due to some stimuli. 
+Further analysis with the corresponding segment in the clip could give more insight as to how those reponses are related to the content in the clips. 
+
+***2D embeddings of the learnt response function***
+
+
 
 
 
