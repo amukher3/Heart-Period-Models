@@ -57,12 +57,20 @@ Following Bach et al.s methodology we decided to have a window of 30s for extrac
 ***A result on the simulated-data used by the author in his work:***
 ![](BestWorkingCase.jpg)
 
-This is one of the preliminary result from one of his experimental scripts. In this the author(s) have shown that the approximation algorithm, `alternating-misPCA(A-misPCA)` reovrers the principal component and the misalignment exactly. 
+This is one of the preliminary result from one of his experimental scripts in the repository. In this the author(s) have shown that the approximation algorithm, `alternating-misPCA(A-misPCA)` reovrers the principal component and the misalignment correctly. 
+
+### Results on the DEAP data-set: 
+
+As described earlier the DEAP data-set had to be pre-processed and then converted to a usable R-R interval time series. Windowing was done as described earlier. 
+
+Some of the estimated components are shown below with a few key points: 
+![](misPC3_edited.jpg)
+
+![](misPC40_edited.jpg)
+
+As shown in the above estimated components(~ 30s) there are smaller epochs(~ 5s),shown by the bounding boxes which are strikingly similar to the common responses seen in the PsychoPhys. literature, such reponses were also extracted by Bach et. al. in his experiments. One of the bounding boxes,later in the second time-series shows deceleraton-accelaration which basically means the Heart Rate(HR) falls and then starts climbing. Sudden _impulse like shapes_ are indicative of sudden increase in the HR potentially due to some stimuli. 
 
 
 
-# Results: 
-
-The estimated princ
 
 
