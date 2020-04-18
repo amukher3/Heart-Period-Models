@@ -20,7 +20,8 @@ Link to the used data-set: https://www.eecs.qmul.ac.uk/mmv/datasets/deap/
 After the described the _`RSA estimation`_ and artifact removal technique our goal was to get reposne function that could explain the changes in the heart period over a period of time for different kinds of continous stimuli. 
 
 There were two different methods that I had started with: 1) Dictionary-learning technique. 
-                                                          2) misAligned PCA.                                                           
+                                                          2) misAligned PCA.  
+                                                          
 ***Dictionary learning technique:*** 
  Used dictionary learning algorithm(K-SVD based) to learn the reposne function. The _`IBI time series`_ was broken into epochs of 5 seconds to form the matrix to be learnt using K-SVD. I decided to choose `5 second` as the window size because the time series being elicited from a continous stream of situmuli would be marred by sudden stimuli thereby the effect of the previous stimuli can be safely assumed to be less than 5 seconds. Another reason to choose a smaller window size was to induce sparsity in the learnt atoms. Having sparse atoms introduces advantages such as easier frequency domain analysis , easily represented de-convolution results etc.  
      One of the fundamental assumptions that I have made is that the _nature of the stimuli is invariant across the different users_, which potentially means that the effect of a partiular clip(or a particular segment) has a similar effect on all the participants. Going forward this might not be a completely prudent assumption but is generally considered a standard practice in the community. It is generally assumed that the response of subjects to standard stimuli functions(especially on the extreme end of the V-A spectrum) lead to very similar responses and strikingly the result seems to support this conjecture as well -- the embeddings(described later) in the 2D plane which seemed to be closer to the ratings(average/median/some central measure) were generally rated extremely in the spectrum. 
@@ -52,6 +53,13 @@ https://github.com/atibaup/MisPCA
 
 `misaligned PCA` is a combinatorially exhaustive search technique to estimate the misalignment in a particular principal component. One of the drawbacks of the `PC` techniques used by Bach et al. was that the estimated principal component did not have any estimate of the latency associated with the response after a stimulus. The latency turns out to be an important parameter when associated with _`Heart Period response`_ functions since it gives us an insight as to how the `V-A spectrum` associates itself with the dynamics of Heart Period changes. A stimuli with a _positive valence_ but _low arousal_ might have a _higher latency_ than a similarly scaled _arousal stimuli_ but with a _negative valence_. Some _PsychoPhys._ literature suggests that latency is a subjective parameter(not completely understood), highly modulated by the effect of Valence rather than Arousal.  This was our primary motivation in moving towards this direction as we had realized that only estimating the response funtion, without any idea of latency could potentially turn out to be a very 'dry' estimate of the effect of Valence. 
 Following Bach et al.s methodology we decided to have a window of 30s for extracting the components.Although, as justified earlier a smaller window size might turn out to be a better choice. 
+
+***A result on the simulated-data used by the author in his work:***
+![](BestWorkingCase.jpg)
+
+This is one of the preliminary result from one of his experimental scripts. In this the author(s) have shown that the approximation algorithm, alternating-misPCA(A-misPCA) reovrers the principal component and the misalignment exactly. T
+
+
 
 # Results: 
 
