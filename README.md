@@ -51,13 +51,13 @@ https://github.com/atibaup/MisPCA
 
 ***Introduction:***
 
-`misaligned PCA` is a combinatorially exhaustive search technique to estimate the misalignment in a particular principal component. One of the drawbacks of the `PC` techniques used by Bach et al. was that the estimated principal component did not have any estimate of the latency associated with the response after a stimulus. The latency turns out to be an important parameter when associated with _`Heart Period response`_ functions since it gives us an insight as to how the `V-A spectrum` associates itself with the dynamics of Heart Period changes. A stimuli with a _positive valence_ but _low arousal_ might have a _higher latency_ than a similarly scaled _arousal stimuli_ but with a _negative valence_. Some _PsychoPhys._ literature suggests that latency is a subjective parameter(not completely understood), highly modulated by the effect of Valence rather than Arousal.  This was our primary motivation in moving towards this direction as we had realized that only estimating the response funtion, without any idea of latency could potentially turn out to be a very 'dry' estimate of the effect of Valence. 
+`misaligned PCA` is a combinatorially exhaustive search technique to estimate the misalignment in a particular principal component. One of the drawbacks of the PC techniques used by Bach et al. was that the estimated principal component did not have any estimate of the latency associated with the response after a stimulus. The latency turns out to be an important parameter when associated with _`Heart Period response`_ functions since it gives us an insight as to how the `V-A spectrum` associates itself with the dynamics of Heart Period changes. A stimuli with a _positive valence_ but _low arousal_ might have a _higher latency_ than a similarly scaled _arousal stimuli_ but with a _negative valence_. Some _PsychoPhys._ literature suggests that latency is a subjective parameter(not completely understood), highly modulated by the effect of Valence rather than Arousal.  This was our primary motivation in moving towards this direction as we had realized that only estimating the response funtion, without any idea of latency could potentially turn out to be a very 'dry' estimate of the effect of Valence. 
 Following Bach et al.s methodology we decided to have a window of 30s for extracting the components.Although, as justified earlier a smaller window size might turn out to be a better choice. 
 
 ***A result on the simulated-data used by the author in his work:***
 ![](BestWorkingCase.jpg)
 
-This is one of the preliminary result from one of his experimental scripts. In this the author(s) have shown that the approximation algorithm, alternating-misPCA(A-misPCA) reovrers the principal component and the misalignment exactly. T
+This is one of the preliminary result from one of his experimental scripts. In this the author(s) have shown that the approximation algorithm, `alternating-misPCA(A-misPCA)` reovrers the principal component and the misalignment exactly. 
 
 
 
