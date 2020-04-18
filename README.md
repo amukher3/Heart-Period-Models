@@ -74,6 +74,9 @@ Further analysis with the corresponding segment in the clip could give more insi
 ***2D embeddings of the estimated response functions***
 
 ![](2D_embeddings.jpg)
+The embeddings corresponding to the PC analysis seems to lie close to the vertical axis, mainly spreading into two clusters. This is probably indicative of the fact that the learnt response functions has _`captured the variance only in one direction, which is intuitve since within Valence and Arousal, correct estimation of Valence is always difficult`_. Estimationg Arousal has never been a difficult estimation problem and can be estimated from bunch of Physiological signals without much hassle. The average ***intra-cluster*** and the ***inter-cluster*** distance for the PC analysis also seems to be very high, which supports the fact that the estiamted _'proprtion of Variance'_ explained by the PC analysis was much lower. 
+
+The embeddings of the misaligned PCs seem to spread into the 4 regions, some of the embeddings would match the average rating of the videos in the 2D V-A plane. The average ***inter-intra*** cluster distance also seems to be less compared to the PC analysis which again conforms to the fact that the proportion of variance explained by the method was higher than PC analysis. 
 
 
 
