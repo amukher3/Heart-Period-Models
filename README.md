@@ -80,6 +80,8 @@ Estimating Arousal has never been a difficult problem and can be estimated from 
 
 The embeddings of the misaligned PCs seem to spread into the 4 regions, some of the embeddings would match the average rating of the videos in the 2D V-A plane. The average ***inter-intra*** cluster distance also seems to be less compared to the PC analysis which again conforms to the fact that the proportion of variance explained by the method was higher than PC analysis. 
 
+***Note***: Look at the striking similarity between the estimated response functions by the two methods. The RFs within the bounding box for the estimated `misPC` seem to be have similar shapes and could be described similar parametric equation as the ones estimated by `Dictionary Learning` technique. 
+
 
 
 
