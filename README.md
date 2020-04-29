@@ -94,7 +94,7 @@ To be fair there has been some research,although abductive, that seem to suggest
 As mentioned earlier,accurately estimated RFs(for the complete V-A plane) could potentially lead to generation and control of _`'affect'`_ thereby aid in modeling of our deep seated responses. As mankind evolves and tries to cope with adverse circumstances in day-to-day lives, having a 'friendly' heart that seems to listen and care could be something that we no longer could afford to ignore since we all could use it to ease off stress and 'un-necessary emotions' from our daily lives.  
 As I have previously mentioned that one of the primary goals of AI should lie in generative modeling of our deep seated responses. Studies like these which attempt to find interpretable models takes us a step closer in this direction. I guess at this point it is needless to point out the implication of such work in helping us transit from just AI to a more generalised world of Affective Intelligent Computers(AIE). 
 
-Further Reading: 
+Interesting reads for some food for thoughts: 
 [1]:https://mitpress.mit.edu/books/affective-computing
 [2]:http://www.macs.hw.ac.uk/~yjc32/project/ref-social%20media%20campaign/1995-affective%20computing.pdf
 
