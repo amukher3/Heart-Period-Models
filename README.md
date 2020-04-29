@@ -1,4 +1,4 @@
-# Any queries/questions/concerns can be addressed to: amukher3@rockets.utoledo.edu, abhi0787@gmail.com
+_`# Any queries/questions/concerns can be addressed to: amukher3@rockets.utoledo.edu, abhi0787@gmail.com`_
 
 # Heart-Period-Models
 An effort to extract the different response functions for changes in heart period under the effect of suddden continous stimuli rated diversely in the Valence-Arousal scale.  
@@ -97,6 +97,8 @@ As I have previously mentioned that one of the primary goals of AI should lie in
 Interesting reads:
 [1]:https://mitpress.mit.edu/books/affective-computing
 [2]:http://www.macs.hw.ac.uk/~yjc32/project/ref-social%20media%20campaign/1995-affective%20computing.pdf
+
+_`Queries/questions/concerns/comments are more than welcome at amukher3@rockets.utoledo.edu and abhi0787@gmail.com`_
 
 
 
