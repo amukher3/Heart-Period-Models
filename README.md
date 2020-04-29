@@ -95,8 +95,8 @@ As mentioned earlier,accurately estimated RFs(for the complete V-A plane) could 
 As I have previously mentioned that one of the primary goals of AI should lie in generative modeling of our deep seated responses. Studies like these which attempt to find interpretable models takes us a step closer in this direction. I guess at this point it is needless to point out the implication of such work in helping us transit from just AI to a more generalised world of Affective Intelligent Computers(AIE). 
 
 Further Reading: 
-https://mitpress.mit.edu/books/affective-computing
-http://www.macs.hw.ac.uk/~yjc32/project/ref-social%20media%20campaign/1995-affective%20computing.pdf
+[1]:https://mitpress.mit.edu/books/affective-computing
+[2]:http://www.macs.hw.ac.uk/~yjc32/project/ref-social%20media%20campaign/1995-affective%20computing.pdf
 
 
 
