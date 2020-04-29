@@ -83,7 +83,7 @@ The embeddings of the misaligned PCs seem to spread into the 4 regions, some of 
 ***Note***: Look at the striking similarity between the estimated response functions by the two methods. The RFs within the bounding box for the estimated `misPC` seem to be have similar shapes and could be described similar parametric equation as the ones estimated by `Dictionary Learning` technique. 
 
 
-***Potential implication(s) and requirement of further study in this direction***
+***Potential implication(s) and the need for further study***
 
 At the time of writing this article, April'20, study in these areas are mostly restricted to predicting subject's rating of  movies/clips etc. For example, a general framework in these kind of studies, across the world, would generally involve asking the subject(s) completing a questionarire followed by their opinion of the movie/clip(s) etc. This seems to be a more or less general set-up and the goal seems to lie in predicting the participant(s) rating of the video clip from the extracted Phys. signals. A successful estimation of the RFs would certainly aid us in predicting the rating of the participant(s) more accruately and alongside make it more interpretable i.e how the functional form of the RF(basically the parameters) are related to the ratings of the participants. A larger study in this direction, in a diverse population could potentially yield a parametric relation between the ratings and the RFs.
 
