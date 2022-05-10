@@ -1,6 +1,6 @@
 _`# Any queries/questions/concerns can be addressed to: amukher3@rockets.utoledo.edu, abhi0787@gmail.com`_
 
-# Author and Research Assistant: Abhishek Mukherjee
+### Author and Research Assistant: Abhishek Mukherjee
 
 # Heart-Period-Models
 An effort to extract the different response functions for changes in heart period under the effect of suddden continous stimuli rated diversely in the Valence-Arousal scale.  
